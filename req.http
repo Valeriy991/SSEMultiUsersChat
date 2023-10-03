@@ -1,0 +1,17 @@
+###POST Message
+POST http://localhost:8080/sse/getChat?id=1&message=1
+
+###POST User
+POST http://localhost:8080/sse/User
+content-type:application/json
+
+{
+  "login": "234",
+  "password": "234"
+}
+
+###GET User
+GET http://localhost:8080/sse/User?login=123&password=123
+
+###GET Users online
+GET http://localhost:8080/sse/getChat
